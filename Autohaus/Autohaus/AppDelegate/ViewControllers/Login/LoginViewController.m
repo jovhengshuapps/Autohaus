@@ -78,7 +78,9 @@
         
     }];
     
-    
+}
+
+- (IBAction)forgotPasswordPresed:(id)sender {
 }
 
 #pragma mark - UITextField Delegate Method
@@ -132,6 +134,4 @@
 }
 
 
-- (IBAction)forgotPasswordPresed:(id)sender {
-}
 @end

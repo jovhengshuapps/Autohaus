@@ -15,7 +15,7 @@
 #define kAppLocation_lat        1.339001
 #define kAppLocation_long       103.778958
 
-#define kAppLogo_Nav            [UIImage imageNamed:@"navbar_logo_iPhone"]
+#define kAppLogo_Nav            [UIImage imageNamed:@"navbar_iPhone"]
 
 //----SHORTCUTS
 #define kAppScreen              [[UIScreen mainScreen]bounds]
