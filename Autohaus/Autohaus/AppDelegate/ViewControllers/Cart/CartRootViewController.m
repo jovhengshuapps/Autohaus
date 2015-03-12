@@ -68,10 +68,10 @@
 //    UIImageView *imageView = [[UIImageView alloc] initWithImage:kAppBackground];
 //    self.tableView.backgroundView = imageView;
     
-    self.labelCheckout.font             = kFONT_CentGothic(16);
-    self.labelTotalCheckout.font        = kFONT_CentGothicBold(18);
-    self.labelCheckout.textColor        = kSWATCH_Brown;
-    self.labelTotalCheckout.textColor   = kSWATCH_Brown;
+    self.labelCheckout.font             = kFONT_HelveticaNeueMedium(16);
+    self.labelTotalCheckout.font        = kFONT_HelveticaNeueMedium(18);
+    self.labelCheckout.textColor        = kSWATCH_Gray63;
+    self.labelTotalCheckout.textColor   = kSWATCH_GreenSectionBar;
 }
 
 - (void)updateDatasource{

@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "Constants.h"
 
 @interface RegisterViewController ()
 - (IBAction)cancelPressed:(id)sender;
@@ -18,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.title = @"Create an Account";
+    self.navigationItem.leftBarButtonItem.title = @"Cancel";
+    [self.navigationItem.leftBarButtonItem setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kSWATCH_NavItemText,NSForegroundColorAttributeName,kFONT_HelveticaNeueLight(16),NSFontAttributeName, nil] forState:UIControlStateNormal];
+    
 }
 
 - (void)didReceiveMemoryWarning {

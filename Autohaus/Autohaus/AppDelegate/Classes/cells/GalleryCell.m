@@ -27,10 +27,10 @@
     self.priceA.font = kFONT_CentGothic(16);
     self.priceB.font = kFONT_CentGothic(16);
     
-    self.titleA.textColor = kSWATCH_Title;
-    self.titleB.textColor = kSWATCH_Title;
-    self.priceA.textColor = kSWATCH_Price;
-    self.priceB.textColor = kSWATCH_Price;
+//    self.titleA.textColor = kSWATCH_Title;
+//    self.titleB.textColor = kSWATCH_Title;
+//    self.priceA.textColor = kSWATCH_Price;
+//    self.priceB.textColor = kSWATCH_Price;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

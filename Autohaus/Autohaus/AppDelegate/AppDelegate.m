@@ -22,10 +22,11 @@
 {
     [[UINavigationBar appearance] setBarTintColor:kSWATCH_NavBG];
     [[UINavigationBar appearance] setTintColor:kSWATCH_TabBG];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor]
-                                                                                     forKey:NSForegroundColorAttributeName]];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kSWATCH_NavTitle,NSForegroundColorAttributeName,kFONT_HelveticaNeue(16),NSFontAttributeName, nil]];
     
     self.window.backgroundColor = [UIColor lightGrayColor];
     

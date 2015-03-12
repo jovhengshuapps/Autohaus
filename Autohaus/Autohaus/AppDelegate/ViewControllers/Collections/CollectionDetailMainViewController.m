@@ -85,8 +85,8 @@
 #warning MANUAL OVERRIDE
     colors = @[
                [UIColor purpleColor],
-               kSWATCH_Pink,
-               kSWATCH_Content,
+               [UIColor redColor],
+               [UIColor yellowColor],
                ];
 }
 

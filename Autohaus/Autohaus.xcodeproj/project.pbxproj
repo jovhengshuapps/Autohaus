@@ -57,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33CA89111AB19D11008B4145 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		443FA6041AB0FD6C000EFD81 /* Autohaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autohaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443FA6081AB0FD6C000EFD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443FA6091AB0FD6C000EFD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 		44453B421AB0FF66001A127E /* CollectionHeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderLabel.h; sourceTree = "<group>"; };
 		44453B431AB0FF66001A127E /* CollectionHeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderLabel.m; sourceTree = "<group>"; };
 		44453B451AB0FF66001A127E /* ProductList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ProductList.plist; sourceTree = "<group>"; };
-		44453B471AB0FF66001A127E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		44453B491AB0FF66001A127E /* CartInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartInterface.h; sourceTree = "<group>"; };
 		44453B4A1AB0FF66001A127E /* CartInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartInterface.m; sourceTree = "<group>"; };
 		44453B4B1AB0FF66001A127E /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
@@ -215,7 +215,6 @@
 				44453B361AB0FF66001A127E /* cells */,
 				44453B3F1AB0FF66001A127E /* collections */,
 				44453B441AB0FF66001A127E /* datasources */,
-				44453B461AB0FF66001A127E /* headers */,
 				44453B481AB0FF66001A127E /* helpers */,
 			);
 			name = Classes;
@@ -265,14 +264,6 @@
 				44453B451AB0FF66001A127E /* ProductList.plist */,
 			);
 			path = datasources;
-			sourceTree = "<group>";
-		};
-		44453B461AB0FF66001A127E /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				44453B471AB0FF66001A127E /* Constants.h */,
-			);
-			path = headers;
 			sourceTree = "<group>";
 		};
 		44453B481AB0FF66001A127E /* helpers */ = {
@@ -402,6 +393,7 @@
 		44EEC4921AB10CAA00DA1CA9 /* Autohaus */ = {
 			isa = PBXGroup;
 			children = (
+				33CA89111AB19D11008B4145 /* Constants.h */,
 				44EEC4931AB10CAA00DA1CA9 /* Main.storyboard */,
 				44EEC4951AB10CAA00DA1CA9 /* Images.xcassets */,
 				44EEC4961AB10CAA00DA1CA9 /* ProductsImages */,

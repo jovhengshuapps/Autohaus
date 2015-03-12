@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self initAppTheme];
+    [self initAppTheme];
 //    [self loadBannerItems];
 }
 
@@ -45,7 +45,6 @@
 
 #pragma mark - Custom Methods
 - (void)initAppTheme{
-//    self.background.image = kAppBackground;
     UIImageView *navBarTitle = [[UIImageView alloc] initWithImage:kAppLogo_Nav];
     [self.navigationItem setTitleView:navBarTitle];
     

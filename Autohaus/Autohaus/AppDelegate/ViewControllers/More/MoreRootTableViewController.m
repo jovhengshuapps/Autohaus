@@ -110,8 +110,8 @@
 
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     /* Colors to be used */
-    UIColor *sectionBGColor     = kSWATCH_CellSection;
-    UIColor *sectionTitleColor  = kSWATCH_Pink;
+    UIColor *sectionBGColor     = [UIColor redColor];
+    UIColor *sectionTitleColor  = [UIColor redColor];
     
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 70)];
     [headerView setBackgroundColor: sectionBGColor];

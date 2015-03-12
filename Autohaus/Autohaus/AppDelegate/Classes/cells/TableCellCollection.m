@@ -80,7 +80,7 @@
         if (row == indexPath.row) {
             //Add border
             [[[collectionView cellForItemAtIndexPath:indexPath] layer] setBorderWidth:2.0f];
-            [[[collectionView cellForItemAtIndexPath:indexPath] layer] setBorderColor: kSWATCH_Pink.CGColor];
+//            [[[collectionView cellForItemAtIndexPath:indexPath] layer] setBorderColor: kSWATCH_Pink.CGColor];
         }
         else {
             NSIndexPath *index = [NSIndexPath indexPathForRow:row inSection:0];
