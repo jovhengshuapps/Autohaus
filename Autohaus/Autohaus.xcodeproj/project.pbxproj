@@ -34,6 +34,8 @@
 		44453B9A1AB0FF66001A127E /* CollectionRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44453B761AB0FF66001A127E /* CollectionRootTableViewController.m */; };
 		44453B9B1AB0FF66001A127E /* HomeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44453B791AB0FF66001A127E /* HomeRootViewController.m */; };
 		44453B9C1AB0FF66001A127E /* MoreRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44453B7C1AB0FF66001A127E /* MoreRootTableViewController.m */; };
+		444EDF4C1AB24F2E007B8354 /* AutohausHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444EDF4B1AB24F2E007B8354 /* AutohausHomeViewController.m */; };
+		444EDF4F1AB24F9E007B8354 /* CollectionCellText.m in Sources */ = {isa = PBXBuildFile; fileRef = 444EDF4E1AB24F9E007B8354 /* CollectionCellText.m */; };
 		44EEC4A11AB10CAA00DA1CA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44EEC4931AB10CAA00DA1CA9 /* Main.storyboard */; };
 		44EEC4A21AB10CAA00DA1CA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44EEC4951AB10CAA00DA1CA9 /* Images.xcassets */; };
 		44EEC4A31AB10CAA00DA1CA9 /* image_skirt1.png in Resources */ = {isa = PBXBuildFile; fileRef = 44EEC4981AB10CAA00DA1CA9 /* image_skirt1.png */; };
@@ -110,6 +112,10 @@
 		44453B791AB0FF66001A127E /* HomeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeRootViewController.m; sourceTree = "<group>"; };
 		44453B7B1AB0FF66001A127E /* MoreRootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreRootTableViewController.h; sourceTree = "<group>"; };
 		44453B7C1AB0FF66001A127E /* MoreRootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreRootTableViewController.m; sourceTree = "<group>"; };
+		444EDF4A1AB24F2E007B8354 /* AutohausHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutohausHomeViewController.h; sourceTree = "<group>"; };
+		444EDF4B1AB24F2E007B8354 /* AutohausHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutohausHomeViewController.m; sourceTree = "<group>"; };
+		444EDF4D1AB24F9E007B8354 /* CollectionCellText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCellText.h; sourceTree = "<group>"; };
+		444EDF4E1AB24F9E007B8354 /* CollectionCellText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCellText.m; sourceTree = "<group>"; };
 		44EEC4941AB10CAA00DA1CA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44EEC4951AB10CAA00DA1CA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44EEC4981AB10CAA00DA1CA9 /* image_skirt1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_skirt1.png; sourceTree = "<group>"; };
@@ -252,6 +258,8 @@
 			children = (
 				44453B401AB0FF66001A127E /* CollectionCellImage.h */,
 				44453B411AB0FF66001A127E /* CollectionCellImage.m */,
+				444EDF4D1AB24F9E007B8354 /* CollectionCellText.h */,
+				444EDF4E1AB24F9E007B8354 /* CollectionCellText.m */,
 				44453B421AB0FF66001A127E /* CollectionHeaderLabel.h */,
 				44453B431AB0FF66001A127E /* CollectionHeaderLabel.m */,
 			);
@@ -390,9 +398,19 @@
 			path = Targets;
 			sourceTree = "<group>";
 		};
+		444EDF491AB24EF8007B8354 /* Customizable */ = {
+			isa = PBXGroup;
+			children = (
+				444EDF4A1AB24F2E007B8354 /* AutohausHomeViewController.h */,
+				444EDF4B1AB24F2E007B8354 /* AutohausHomeViewController.m */,
+			);
+			path = Customizable;
+			sourceTree = "<group>";
+		};
 		44EEC4921AB10CAA00DA1CA9 /* Autohaus */ = {
 			isa = PBXGroup;
 			children = (
+				444EDF491AB24EF8007B8354 /* Customizable */,
 				33CA89111AB19D11008B4145 /* Constants.h */,
 				44EEC4931AB10CAA00DA1CA9 /* Main.storyboard */,
 				44EEC4951AB10CAA00DA1CA9 /* Images.xcassets */,
@@ -565,7 +583,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				444EDF4F1AB24F9E007B8354 /* CollectionCellText.m in Sources */,
 				44453B951AB0FF66001A127E /* CartRootViewController.m in Sources */,
+				444EDF4C1AB24F2E007B8354 /* AutohausHomeViewController.m in Sources */,
 				44453B891AB0FF66001A127E /* GingerDolls.xcdatamodeld in Sources */,
 				44453B881AB0FF66001A127E /* Cart.m in Sources */,
 				44453B941AB0FF66001A127E /* AboutRootViewController.m in Sources */,

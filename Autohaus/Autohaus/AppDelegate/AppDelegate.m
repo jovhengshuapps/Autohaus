@@ -30,15 +30,14 @@
     
     self.window.backgroundColor = [UIColor lightGrayColor];
     
-//    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-//    ((UITabBarItem *)tabBarController.tabBar.items[0]).selectedImage = [UIImage imageNamed:@"TabIcon_Home_Selected"];
-//    ((UITabBarItem *)tabBarController.tabBar.items[1]).selectedImage = [UIImage imageNamed:@"TabIcon_About_Selected"];
-//    ((UITabBarItem *)tabBarController.tabBar.items[2]).selectedImage = [UIImage imageNamed:@"TabIcon_Collection_Selected"];
-//    ((UITabBarItem *)tabBarController.tabBar.items[3]).selectedImage = [UIImage imageNamed:@"TabIcon_Cart_Selected"];
-//    ((UITabBarItem *)tabBarController.tabBar.items[4]).selectedImage = [UIImage imageNamed:@"TabIcon_More_Selected"];
-//    
-//    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor colorWithRed:183.0f/255.0f green:47.0f/255.0f blue:107.0f/255.0f alpha:1.0f] }
-//                                             forState:UIControlStateSelected];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:kSWATCH_NavItemText,
+       NSFontAttributeName:kFONT_HelveticaNeueLight(16.0f)
+       }
+     forState:UIControlStateNormal];
+    
     
     return YES;
 }

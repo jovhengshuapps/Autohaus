@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Constants.h"
+#import "CollectionHeaderLabel.h"
+#import "CollectionCellImage.h"
 
 @interface HomeRootViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionHome;
+@property (strong, nonatomic) NSArray *arrayOfCollection;
 @end

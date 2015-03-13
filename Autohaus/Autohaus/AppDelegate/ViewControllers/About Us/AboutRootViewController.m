@@ -45,11 +45,15 @@
 #pragma mark - Custom Methods
 - (void)initAppTheme{
 //    self.background.image = kAppBackground;
-    UIImageView *navBarTitle = [[UIImageView alloc] initWithImage:kAppLogo_Nav];
-    [self.navigationItem setTitleView:navBarTitle];
+//    UIImageView *navBarTitle = [[UIImageView alloc] initWithImage:kAppLogo_Nav];
+//    [self.navigationItem setTitleView:navBarTitle];
 
-    self.header.font = kFONT_CentGothicBold(16);
-    self.content.font = kFONT_CentGothic(14);
+    self.title = @"About Us";
+    
+    self.header.font = kFONT_HelveticaNeue(16);
+    self.content.font = kFONT_HelveticaNeue(18);
+    
+    
 }
 #pragma mark - Delegate Methods
 
