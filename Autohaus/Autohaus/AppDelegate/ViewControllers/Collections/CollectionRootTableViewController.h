@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CollectionRootCell.h"
+#import "CollectionListTableViewController.h"
+#import "Constants.h"
 
 @interface CollectionRootTableViewController : UITableViewController
-
+@property (strong, nonatomic) NSDictionary     *datasource;
+@property (strong, nonatomic) NSMutableArray *arrayCollapsedSection;
+- (void) getDataSource;
 @end

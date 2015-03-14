@@ -380,10 +380,10 @@
             </objects>
             <point key="canvasLocation" x="-1494" y="102"/>
         </scene>
-        <!--Collection Root Table View Controller-->
+        <!--Autohaus Shop View Controller-->
         <scene sceneID="O6v-OF-G7H">
             <objects>
-                <tableViewController id="77A-nP-m8U" customClass="CollectionRootTableViewController" sceneMemberID="viewController">
+                <tableViewController id="77A-nP-m8U" customClass="AutohausShopViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="141" sectionHeaderHeight="22" sectionFooterHeight="22" id="ggs-xw-hE6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -432,7 +432,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SG based that established in 2014." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CD-Yy-gqp">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SG based that established in 2014." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CD-Yy-gqp">
                                 <rect key="frame" x="20" y="272" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.71764707569999997" green="0.18431372939999999" blue="0.41960787770000002" alpha="1" colorSpace="deviceRGB"/>
@@ -441,14 +441,16 @@
                                     <rect key="frame" x="20" y="228" width="360" height="21"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1d-nh-bd7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1d-nh-bd7">
                                 <rect key="frame" x="20" y="301" width="560" height="218"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Autohaus is an automotive parts and accessories retailer that is dedicated in bringing both value and quality to its customers.Our range of products includes Shell engine oil, Denso spark plugs, Bosch wipers and Nisshinbo brake pads just to name a few.Autohaus Trading and Services is a reg- istered business entity in Singapore (Registration No: 53271667A). We are in the business of online retail for automo- bile lubricants, additives, accessories</string>
+                                <string key="text">Autohaus is an automotive parts and accessories retailer that is dedicated in bringing both value and quality to its customers.
+Our range of products includes Shell engine oil, Denso spark plugs, Bosch wipers and Nisshinbo brake pads just to name a few.
+Autohaus Trading and Services is a reg- istered business entity in Singapore (Registration No: 53271667A). We are in the business of online retail for automo- bile lubricants, additives, accessories</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="image_about_home_iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-V0-16L">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="image_about_home_iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-V0-16L">
                                 <rect key="frame" x="0.0" y="64" width="320" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="181" id="ZGu-wg-TUB"/>
@@ -608,12 +610,12 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="31N-R1-mII"/>
-                                        <exclude reference="5uy-gp-qPe"/>
-                                        <exclude reference="V7S-53-1JB"/>
-                                        <exclude reference="hdm-Uz-qjb"/>
                                         <exclude reference="YTf-36-TeY"/>
                                         <exclude reference="aAP-fa-AJr"/>
                                         <exclude reference="ajj-Ko-3Dn"/>
+                                        <exclude reference="5uy-gp-qPe"/>
+                                        <exclude reference="V7S-53-1JB"/>
+                                        <exclude reference="hdm-Uz-qjb"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -623,12 +625,12 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="31N-R1-mII"/>
-                                        <include reference="5uy-gp-qPe"/>
-                                        <include reference="V7S-53-1JB"/>
-                                        <include reference="hdm-Uz-qjb"/>
                                         <include reference="YTf-36-TeY"/>
                                         <include reference="aAP-fa-AJr"/>
                                         <include reference="ajj-Ko-3Dn"/>
+                                        <include reference="5uy-gp-qPe"/>
+                                        <include reference="V7S-53-1JB"/>
+                                        <include reference="hdm-Uz-qjb"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -717,6 +719,9 @@
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="0.0" y="8" width="312" height="21"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.27058823529411763" green="0.69803921568627447" blue="0.46274509803921571" alpha="1" colorSpace="deviceRGB"/>
@@ -788,6 +793,11 @@
                                 <exclude reference="TgV-jF-dml"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Kz2-rZ-7Qp"/>
+                                <exclude reference="9Db-KC-xpr"/>
+                                <exclude reference="BhC-SI-8Hj"/>
+                                <exclude reference="DwD-NU-Ja6"/>
+                                <exclude reference="jy1-UC-eBh"/>
                                 <exclude reference="1RC-PI-7Ye"/>
                                 <exclude reference="CK5-3z-m8X"/>
                                 <exclude reference="G0v-jN-ZZZ"/>
@@ -798,11 +808,6 @@
                                 <exclude reference="mQy-uG-5KF"/>
                                 <exclude reference="p5K-DA-4zg"/>
                                 <exclude reference="sTa-kb-erd"/>
-                                <exclude reference="9Db-KC-xpr"/>
-                                <exclude reference="BhC-SI-8Hj"/>
-                                <exclude reference="DwD-NU-Ja6"/>
-                                <exclude reference="jy1-UC-eBh"/>
-                                <exclude reference="Kz2-rZ-7Qp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -812,6 +817,11 @@
                                 <include reference="TgV-jF-dml"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Kz2-rZ-7Qp"/>
+                                <include reference="9Db-KC-xpr"/>
+                                <include reference="BhC-SI-8Hj"/>
+                                <include reference="DwD-NU-Ja6"/>
+                                <include reference="jy1-UC-eBh"/>
                                 <include reference="1RC-PI-7Ye"/>
                                 <include reference="CK5-3z-m8X"/>
                                 <include reference="G0v-jN-ZZZ"/>
@@ -822,11 +832,6 @@
                                 <include reference="mQy-uG-5KF"/>
                                 <include reference="p5K-DA-4zg"/>
                                 <include reference="sTa-kb-erd"/>
-                                <include reference="9Db-KC-xpr"/>
-                                <include reference="BhC-SI-8Hj"/>
-                                <include reference="DwD-NU-Ja6"/>
-                                <include reference="jy1-UC-eBh"/>
-                                <include reference="Kz2-rZ-7Qp"/>
                             </mask>
                         </variation>
                     </view>
@@ -1095,14 +1100,15 @@
                                                     <exclude reference="Yon-w4-AwF"/>
                                                 </mask>
                                             </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
+                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="260" y="157" width="55" height="120"/>
                                                 <mask key="constraints">
                                                     <include reference="TPW-kI-BBZ"/>
                                                     <include reference="Yon-w4-AwF"/>
                                                 </mask>
                                             </variation>
                                         </scrollView>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-aW-dpU" userLabel="productName Overlay">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-aW-dpU" userLabel="productName Overlay">
                                             <rect key="frame" x="0.0" y="11" width="205" height="36"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-nO-ZXK">
@@ -1130,7 +1136,7 @@
                                                 </mask>
                                             </variation>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-m7-5T5" userLabel="productPrice Overlay">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-m7-5T5" userLabel="productPrice Overlay">
                                             <rect key="frame" x="0.0" y="55" width="75" height="33"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3aO-A1-gKD">
@@ -1836,11 +1842,11 @@ Ribbon Key Jeans</string>
             </objects>
             <point key="canvasLocation" x="1182" y="935.25"/>
         </scene>
-        <!--About Us-->
+        <!--Testimonials-->
         <scene sceneID="BHh-Vv-Ra1">
             <objects>
                 <navigationController storyboardIdentifier="navAbout" automaticallyAdjustsScrollViewInsets="NO" id="cd5-NI-9Vi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About Us" image="tab_testimonials_iPhone" id="Aa5-XT-lS0"/>
+                    <tabBarItem key="tabBarItem" title="Testimonials" image="tab_testimonials_iPhone" id="Aa5-XT-lS0"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pVn-aw-cda">
@@ -1857,11 +1863,11 @@ Ribbon Key Jeans</string>
             </objects>
             <point key="canvasLocation" x="416" y="-481"/>
         </scene>
-        <!--Collection-->
+        <!--Shop-->
         <scene sceneID="3x6-h2-JUh">
             <objects>
                 <navigationController storyboardIdentifier="navCollect" automaticallyAdjustsScrollViewInsets="NO" id="UNk-n9-WA7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" image="tab_shop_iPhone" id="JND-pF-L99"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="tab_shop_iPhone" id="JND-pF-L99"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WSO-Fm-wjF">

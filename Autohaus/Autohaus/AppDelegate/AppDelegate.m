@@ -17,11 +17,12 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [[UINavigationBar appearance] setBarTintColor:kSWATCH_NavBG];
-    [[UINavigationBar appearance] setTintColor:kSWATCH_TabBG];
+    [[UINavigationBar appearance] setTintColor:kSWATCH_NavItemText];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
     [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
@@ -29,8 +30,7 @@
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:kSWATCH_NavTitle,NSForegroundColorAttributeName,kFONT_HelveticaNeue(16),NSFontAttributeName, nil]];
     
     self.window.backgroundColor = [UIColor lightGrayColor];
-    
-    
+        
     [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
      setTitleTextAttributes:
      @{NSForegroundColorAttributeName:kSWATCH_NavItemText,
@@ -38,6 +38,8 @@
        }
      forState:UIControlStateNormal];
     
+    
+    self.tabBarController = (UITabBarController*)kStoryboard(@"mainTabView");
     
     return YES;
 }

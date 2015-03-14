@@ -17,6 +17,15 @@
 
 #define kAppLogo_Nav            [UIImage imageNamed:@"navbar_iPhone"]
 
+//----TABS
+#define kTabHome                1
+#define kTabAbout               1
+#define kTabShop                1
+#define kTabCart                1
+#define kTabTestimonial         1
+#define kTabMore                1
+
+
 //----SHORTCUTS
 #define kAppScreen              [[UIScreen mainScreen]bounds]
 #define kNotifCenter            [NSNotificationCenter defaultCenter]

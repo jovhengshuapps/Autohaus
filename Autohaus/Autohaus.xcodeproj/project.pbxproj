@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33BA16F71AB3C93A00DDD5CA /* AutohausShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA16F61AB3C93A00DDD5CA /* AutohausShopViewController.m */; };
 		443FA60A1AB0FD6C000EFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6091AB0FD6C000EFD81 /* main.m */; };
 		443FA6271AB0FD6C000EFD81 /* AutohausTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6261AB0FD6C000EFD81 /* AutohausTests.m */; };
 		44453B2F1AB0FF3D001A127E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44453B2E1AB0FF3D001A127E /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33BA16F51AB3C93A00DDD5CA /* AutohausShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutohausShopViewController.h; sourceTree = "<group>"; };
+		33BA16F61AB3C93A00DDD5CA /* AutohausShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutohausShopViewController.m; sourceTree = "<group>"; };
 		33CA89111AB19D11008B4145 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		443FA6041AB0FD6C000EFD81 /* Autohaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autohaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443FA6081AB0FD6C000EFD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 			children = (
 				444EDF4A1AB24F2E007B8354 /* AutohausHomeViewController.h */,
 				444EDF4B1AB24F2E007B8354 /* AutohausHomeViewController.m */,
+				33BA16F51AB3C93A00DDD5CA /* AutohausShopViewController.h */,
+				33BA16F61AB3C93A00DDD5CA /* AutohausShopViewController.m */,
 			);
 			path = Customizable;
 			sourceTree = "<group>";
@@ -593,6 +598,7 @@
 				44453B991AB0FF66001A127E /* CollectionListTableViewController.m in Sources */,
 				44453B841AB0FF66001A127E /* CollectionHeaderLabel.m in Sources */,
 				44453B811AB0FF66001A127E /* GalleryCell.m in Sources */,
+				33BA16F71AB3C93A00DDD5CA /* AutohausShopViewController.m in Sources */,
 				44EEC4AC1AB1101300DA1CA9 /* LoginViewController.m in Sources */,
 				44453B2F1AB0FF3D001A127E /* AppDelegate.m in Sources */,
 				44453B7F1AB0FF66001A127E /* CartCell.m in Sources */,
