@@ -12,7 +12,7 @@
 #import "Constants.h"
 
 @interface CollectionRootTableViewController : UITableViewController
-@property (strong, nonatomic) NSDictionary     *datasource;
+@property (strong, nonatomic) NSMutableDictionary     *datasource;
 @property (strong, nonatomic) NSMutableArray *arrayCollapsedSection;
 - (void) getDataSource;
 @end

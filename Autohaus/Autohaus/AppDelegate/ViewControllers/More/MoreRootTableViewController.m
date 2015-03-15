@@ -9,10 +9,7 @@
 #import "MoreRootTableViewController.h"
 #import "Constants.h"
 
-@interface MoreRootTableViewController (){
-    NSArray     *datasource;
-    NSInteger   objectTag;
-}
+@interface MoreRootTableViewController ()
 
 @end
 
@@ -60,37 +57,17 @@
 }
 
 - (void)updateDatasource{
-    if (YES) {
-        datasource = @[@{@"Actions": @[@"Call",
-                                       @"Email"
-                                       ]
-                         },
-                       ];
-        
-//        datasource = @[@{@"Account": @[@"Transactions",
-//                                       @"Change Password",
-//                                       @"Reset Password",
-//                                       @"Shipping and Billing Info",
-//                                       @"Log Out"
-//                                       ]
-//                         },
-//                       @{@"About Us": @[@"FAQs",
-//                                        @"Terms and Conditions",
-//                                        @"Contact Us"
-//                                        ]
-//                         }];
-    }else{
-        datasource = @[@{@"Account": @[@"Transactions",
+        self.datasource = @[@{@"Account": @[@"Purchase History",
                                        @"Change Password",
                                        @"Reset Password",
                                        @"Shipping and Billing Info",
-                                       @"Log In"]
+                                       @"Log Out"]
                          },
-                       @{@"About Us": @[@"FAQs",
-                                        @"Terms and Conditions",
-                                        @"Contact Us"]
+                       @{@"About": @[@"About Us",
+                                        @"Contact Us",
+                                     @"About the Developer"]
                          }];
-    }
+    
     [self.tableView reloadData];
 }
 #pragma mark - Delegate Methods
@@ -98,30 +75,32 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [datasource count];
+    return [self.datasource count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-//    if (section == 0)   return [[datasource[section] valueForKey:@"Account"] count];
-//    else                return [[datasource[section] valueForKey:@"About Us"] count];
-    return [[datasource[section] valueForKey:@"Actions"] count];
+    NSString *key = [self.datasource[section] allKeys][0];
+    return [[self.datasource[section] valueForKey:key] count];
 }
 
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    /* Colors to be used */
-    UIColor *sectionBGColor     = [UIColor redColor];
-    UIColor *sectionTitleColor  = [UIColor redColor];
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 70)];
-    [headerView setBackgroundColor: sectionBGColor];
-    UILabel *sectionTitle = [[UILabel alloc]init];
-    sectionTitle.text = [NSString stringWithFormat:@"%@",[[datasource [section] allKeys]lastObject]];
-    sectionTitle.textColor = sectionTitleColor;
-    [sectionTitle setFrame:CGRectMake(20, 0, tableView.bounds.size.width, 25)];
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, tableView.frame.size.width, 44.0f)];
+    headerView.backgroundColor = MORE_SECTION_BAR_COLOR;
     
-    [headerView addSubview:sectionTitle];
+    UILabel *labelTitle = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 0.0f, headerView.frame.size.width - 20.0f, 44.0f)];
+    labelTitle.backgroundColor = [UIColor clearColor];
+    labelTitle.font = MORE_SECTION_FONT;
+    labelTitle.textColor = MORE_SECTION_COLOR;
+    labelTitle.text = [self.datasource[section] allKeys][0];
+    [headerView addSubview:labelTitle];
+    
     return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 44.0f;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -131,15 +110,20 @@
     NSInteger section = indexPath.section;
     NSInteger row = indexPath.row;
     
-//    if (section == 0) {
-//        cell.textLabel.text = [[datasource[section] valueForKey:@"Account"] objectAtIndex:row];
-//    }else{
-//        cell.textLabel.text = [[datasource[section] valueForKey:@"About Us"] objectAtIndex:row];
-//    }
+    NSString *key = [self.datasource[section] allKeys][0];
     
-    cell.textLabel.text = [[datasource[section] valueForKey:@"Actions"] objectAtIndex:row];
+    UIView *cellView = [[UIView alloc] initWithFrame:CGRectMake(15.0f, 0.0f, tableView.frame.size.width - 30.0f, 44.0f)];
+    cellView.backgroundColor = MORE_CELL_BOX_COLOR;
+    cellView.layer.cornerRadius = MORE_CELL_CORNER;
+    [cell.contentView addSubview:cellView];
     
-    cell.textLabel.font = kFONT_CentGothic(17);
+    UILabel *textLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, cellView.frame.size.width, 44.0f)];
+    
+    textLabel.text = [[self.datasource[section] valueForKey:key] objectAtIndex:row];
+    textLabel.textColor = MORE_CELL_COLOR;
+    textLabel.font = MORE_CELL_FONT;
+    
+    [cellView addSubview:textLabel];
     
     return cell;
 }
@@ -147,25 +131,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    objectTag = indexPath.row;
-    if (indexPath.row == 0) {
-        NSString *message = [NSString stringWithFormat:@"Would you like to call %@?",kAppName];
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:kAppName
-                                                       message:message
-                                                      delegate:self
-                                             cancelButtonTitle:@"Yes"
-                                             otherButtonTitles:@"No", nil];
-        
-        [alert show];
-    }else{
-        MFMailComposeViewController *mailer = [MFMailComposeViewController new];
-        [mailer setMailComposeDelegate:self];
-        [mailer setSubject:@""];
-        [mailer setToRecipients:kAppEmail];
-        [self presentViewController:mailer animated:YES completion:^{
-            [self.tabBarController.tabBar setTranslucent:NO];
-        }];
-    }
+//    objectTag = indexPath.row;
+//    if (indexPath.row == 0) {
+//        NSString *message = [NSString stringWithFormat:@"Would you like to call %@?",kAppName];
+//        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:kAppName
+//                                                       message:message
+//                                                      delegate:self
+//                                             cancelButtonTitle:@"Yes"
+//                                             otherButtonTitles:@"No", nil];
+//        
+//        [alert show];
+//    }else{
+//        MFMailComposeViewController *mailer = [MFMailComposeViewController new];
+//        [mailer setMailComposeDelegate:self];
+//        [mailer setSubject:@""];
+//        [mailer setToRecipients:kAppEmail];
+//        [self presentViewController:mailer animated:YES completion:^{
+//            [self.tabBarController.tabBar setTranslucent:NO];
+//        }];
+//    }
     
 }
 

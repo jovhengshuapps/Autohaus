@@ -55,6 +55,8 @@
 #define kSWATCH_BlueButton      [UIColor colorWithRed:42.0f/255.0f    green:65.0f/255.0f    blue:127.0f/255.0f alpha:1.0]
 #define kSWATCH_GreenSectionBar [UIColor colorWithRed:69.0f/255.0f    green:178.0f/255.0f    blue:118.0f/255.0f alpha:1.0]
 
+#define COLOR_GRAY(v)           [UIColor colorWithRed:v/255.0f    green:v/255.0f    blue:v/255.0f alpha:1.0]
+
 
 
 
@@ -73,4 +75,24 @@
 #define kLoginTypeAdmin     @"LoginTypeAdmin"
 #define kloginTypeGeneral   @"LoginTypeGeneral"
 
+
+
+//--Configuration
+
+#define TESTIMONIAL_BOX_CORNER                              6.0f
+#define TESTIMONIAL_BOX_COLOR                               kSWATCH_Gray230
+#define TESTIMONIAL_MSG_FONT                                kFONT_HelveticaNeueMedium(16.0f)
+#define TESTIMONIAL_MSG_COLOR                               kSWATCH_Gray63
+#define TESTIMONIAL_NAME_FONT                               kFONT_HelveticaNeueCondensedBold(14.0f)
+#define TESTIMONIAL_NAME_COLOR                              kSWATCH_GreenSectionBar
+#define TESTIMONIAL_TITLE_FONT                              kFONT_HelveticaNeueLight(14.0f)
+#define TESTIMONIAL_TITLE_COLOR                             kSWATCH_Gray63
+
+#define MORE_SECTION_FONT                                   kFONT_HelveticaNeueCondensedBold(14.0f)
+#define MORE_SECTION_COLOR                                  [UIColor whiteColor]
+#define MORE_SECTION_BAR_COLOR                              kSWATCH_GreenSectionBar
+#define MORE_CELL_FONT                                      kFONT_HelveticaNeueMedium(15.0f)
+#define MORE_CELL_BOX_COLOR                                 kSWATCH_Gray230
+#define MORE_CELL_COLOR                                     kSWATCH_Gray63
+#define MORE_CELL_CORNER                                    6.0f
 #endif

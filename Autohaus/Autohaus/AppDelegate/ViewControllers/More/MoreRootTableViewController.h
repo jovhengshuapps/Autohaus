@@ -10,5 +10,5 @@
 #import <MessageUI/MFMailComposeViewController.h>
 
 @interface MoreRootTableViewController : UITableViewController <MFMailComposeViewControllerDelegate, UIAlertViewDelegate>
-
+@property (strong, nonatomic) NSArray *datasource;
 @end

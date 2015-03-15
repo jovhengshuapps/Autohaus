@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		338704B21AB53B0B00D21E0C /* TestimonialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338704B11AB53B0B00D21E0C /* TestimonialsViewController.m */; };
+		338704B81AB53C7400D21E0C /* TestimonialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 338704B71AB53C7400D21E0C /* TestimonialCell.m */; };
 		33BA16F71AB3C93A00DDD5CA /* AutohausShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BA16F61AB3C93A00DDD5CA /* AutohausShopViewController.m */; };
 		443FA60A1AB0FD6C000EFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6091AB0FD6C000EFD81 /* main.m */; };
 		443FA6271AB0FD6C000EFD81 /* AutohausTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6261AB0FD6C000EFD81 /* AutohausTests.m */; };
@@ -60,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		338704B01AB53B0B00D21E0C /* TestimonialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestimonialsViewController.h; sourceTree = "<group>"; };
+		338704B11AB53B0B00D21E0C /* TestimonialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestimonialsViewController.m; sourceTree = "<group>"; };
+		338704B61AB53C7400D21E0C /* TestimonialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestimonialCell.h; sourceTree = "<group>"; };
+		338704B71AB53C7400D21E0C /* TestimonialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestimonialCell.m; sourceTree = "<group>"; };
 		33BA16F51AB3C93A00DDD5CA /* AutohausShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutohausShopViewController.h; sourceTree = "<group>"; };
 		33BA16F61AB3C93A00DDD5CA /* AutohausShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutohausShopViewController.m; sourceTree = "<group>"; };
 		33CA89111AB19D11008B4145 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -151,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		338704AF1AB53AF400D21E0C /* Testimonials */ = {
+			isa = PBXGroup;
+			children = (
+				338704B01AB53B0B00D21E0C /* TestimonialsViewController.h */,
+				338704B11AB53B0B00D21E0C /* TestimonialsViewController.m */,
+			);
+			path = Testimonials;
+			sourceTree = "<group>";
+		};
 		443FA5FB1AB0FD6C000EFD81 = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +267,8 @@
 				44453B3C1AB0FF66001A127E /* GalleryCell.m */,
 				44453B3D1AB0FF66001A127E /* TableCellCollection.h */,
 				44453B3E1AB0FF66001A127E /* TableCellCollection.m */,
+				338704B61AB53C7400D21E0C /* TestimonialCell.h */,
+				338704B71AB53C7400D21E0C /* TestimonialCell.m */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -334,6 +351,7 @@
 				44453B661AB0FF66001A127E /* About Us */,
 				44453B691AB0FF66001A127E /* Cart */,
 				44453B6C1AB0FF66001A127E /* Collections */,
+				338704AF1AB53AF400D21E0C /* Testimonials */,
 				44453B7A1AB0FF66001A127E /* More */,
 			);
 			name = ViewControllers;
@@ -604,6 +622,7 @@
 				44453B7F1AB0FF66001A127E /* CartCell.m in Sources */,
 				44453B821AB0FF66001A127E /* TableCellCollection.m in Sources */,
 				44453B971AB0FF66001A127E /* CollectionDetailMainViewController.m in Sources */,
+				338704B21AB53B0B00D21E0C /* TestimonialsViewController.m in Sources */,
 				44453B9A1AB0FF66001A127E /* CollectionRootTableViewController.m in Sources */,
 				44453B981AB0FF66001A127E /* CollectionDetailSubViewController.m in Sources */,
 				44EEC4AF1AB111BE00DA1CA9 /* RegisterViewController.m in Sources */,
@@ -614,6 +633,7 @@
 				44453B9B1AB0FF66001A127E /* HomeRootViewController.m in Sources */,
 				44453B831AB0FF66001A127E /* CollectionCellImage.m in Sources */,
 				44453B961AB0FF66001A127E /* Add2CartViewController.m in Sources */,
+				338704B81AB53C7400D21E0C /* TestimonialCell.m in Sources */,
 				44453B861AB0FF66001A127E /* CartInterface.m in Sources */,
 				44453B801AB0FF66001A127E /* CollectionRootCell.m in Sources */,
 			);

@@ -52,8 +52,10 @@
 }
 
 - (void)getDataSource {
-    self.arrayCollapsedSection = [[NSMutableArray alloc] init];
+    self.arrayCollapsedSection = nil;
     self.datasource = nil;
+    self.arrayCollapsedSection = [[NSMutableArray alloc] init];
+    self.datasource = [[NSMutableDictionary alloc] init];
 }
 
 //- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

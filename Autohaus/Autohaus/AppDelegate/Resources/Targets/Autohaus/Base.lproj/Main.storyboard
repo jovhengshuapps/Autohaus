@@ -384,12 +384,13 @@
         <scene sceneID="O6v-OF-G7H">
             <objects>
                 <tableViewController id="77A-nP-m8U" customClass="AutohausShopViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="141" sectionHeaderHeight="22" sectionFooterHeight="22" id="ggs-xw-hE6">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="141" sectionHeaderHeight="22" sectionFooterHeight="22" id="ggs-xw-hE6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="hhk-Dc-RLS" customClass="CollectionRootCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="3" indentationWidth="0.0" reuseIdentifier="cell" id="hhk-Dc-RLS" customClass="CollectionRootCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="141"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hhk-Dc-RLS" id="efY-4Z-uaD">
@@ -449,6 +450,9 @@ Our range of products includes Shell engine oil, Denso spark plugs, Bosch wipers
 Autohaus Trading and Services is a reg- istered business entity in Singapore (Registration No: 53271667A). We are in the business of online retail for automo- bile lubricants, additives, accessories</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="257" width="360" height="533"/>
+                                </variation>
                             </textView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="image_about_home_iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="VFF-V0-16L">
                                 <rect key="frame" x="0.0" y="64" width="320" height="200"/>
@@ -460,7 +464,8 @@ Autohaus Trading and Services is a reg- istered business entity in Singapore (Re
                                         <exclude reference="ZGu-wg-TUB"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="68" width="360" height="181"/>
                                     <mask key="constraints">
                                         <include reference="ZGu-wg-TUB"/>
                                     </mask>
@@ -511,7 +516,7 @@ Autohaus Trading and Services is a reg- istered business entity in Singapore (Re
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9BR-6l-N63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162.5" y="-459"/>
+            <point key="canvasLocation" x="1869" y="-1125.75"/>
         </scene>
         <!--Autohaus Home View Controller-->
         <scene sceneID="iaE-Eo-LzE">
@@ -634,23 +639,16 @@ Autohaus Trading and Services is a reg- istered business entity in Singapore (Re
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xup-7Y-hAJ" userLabel="Button About">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xup-7Y-hAJ" userLabel="Button About">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="tTh-gU-DeO">
                                         <variation key="heightClass=regular-widthClass=compact" constant="370"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content=". . .   ">
-                                            <attributes>
-                                                <color key="NSColor" red="0.16470588235294117" green="0.25490196078431371" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
-                                                <font key="NSFont" size="22" name="GillSans-UltraBold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="10"/>
+                                <state key="normal" image="icon_more_iPhone">
+                                    <color key="titleColor" red="0.16470588235294117" green="0.25490196078431371" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1108,7 +1106,7 @@ Autohaus Trading and Services is a reg- istered business entity in Singapore (Re
                                                 </mask>
                                             </variation>
                                         </scrollView>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-aW-dpU" userLabel="productName Overlay">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-aW-dpU" userLabel="productName Overlay">
                                             <rect key="frame" x="0.0" y="11" width="205" height="36"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-nO-ZXK">
@@ -1136,7 +1134,7 @@ Autohaus Trading and Services is a reg- istered business entity in Singapore (Re
                                                 </mask>
                                             </variation>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-m7-5T5" userLabel="productPrice Overlay">
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXR-m7-5T5" userLabel="productPrice Overlay">
                                             <rect key="frame" x="0.0" y="55" width="75" height="33"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="3aO-A1-gKD">
@@ -1856,12 +1854,184 @@ Ribbon Key Jeans</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="sxT-Dj-Zw3" kind="relationship" relationship="rootViewController" id="eCr-hE-mBb"/>
+                        <segue destination="JNj-b8-yKb" kind="relationship" relationship="rootViewController" id="yKh-Ad-Zcr"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCw-Ky-DMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="416" y="-481"/>
+        </scene>
+        <!--Testimonials View Controller-->
+        <scene sceneID="iUh-SG-g82">
+            <objects>
+                <tableViewController id="JNj-b8-yKb" customClass="TestimonialsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="236" sectionHeaderHeight="22" sectionFooterHeight="22" id="LhX-lX-j4k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestimonialCell" rowHeight="236" id="ODQ-cU-wyu" customClass="TestimonialCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ODQ-cU-wyu" id="n8v-Dg-Vlr">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lWY-FI-cMv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="346" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-Iw-W3P" userLabel="Message">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="346" translatesAutoresizingMaskIntoConstraints="NO" id="dxc-O5-AJk" userLabel="Name">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="xxR-s3-NpI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.19215686274509802" green="0.69803921568627447" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="xxR-s3-NpI"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="xxR-s3-NpI"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="346" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-6D-eNn" userLabel="Title">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="FxC-Hu-xsk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="FxC-Hu-xsk"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="FxC-Hu-xsk"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="3q2-6D-eNn" firstAttribute="leading" secondItem="lWY-FI-cMv" secondAttribute="leading" constant="8" id="6pk-kf-rTi"/>
+                                                <constraint firstItem="3q2-6D-eNn" firstAttribute="centerX" secondItem="hk7-Iw-W3P" secondAttribute="centerX" id="Bpg-h1-28J"/>
+                                                <constraint firstItem="dxc-O5-AJk" firstAttribute="leading" secondItem="lWY-FI-cMv" secondAttribute="leading" constant="8" id="Efd-85-CoR"/>
+                                                <constraint firstItem="dxc-O5-AJk" firstAttribute="top" secondItem="hk7-Iw-W3P" secondAttribute="bottom" constant="6" id="KVL-pi-Gdd"/>
+                                                <constraint firstAttribute="centerX" secondItem="hk7-Iw-W3P" secondAttribute="centerX" id="Lef-4f-1W3"/>
+                                                <constraint firstItem="3q2-6D-eNn" firstAttribute="centerX" secondItem="dxc-O5-AJk" secondAttribute="centerX" id="O5y-KZ-Tn7"/>
+                                                <constraint firstItem="hk7-Iw-W3P" firstAttribute="leading" secondItem="lWY-FI-cMv" secondAttribute="leading" constant="8" id="QRJ-Bc-XbN"/>
+                                                <constraint firstAttribute="trailing" secondItem="hk7-Iw-W3P" secondAttribute="trailing" constant="8" id="Vdd-2W-CqI"/>
+                                                <constraint firstAttribute="trailing" secondItem="3q2-6D-eNn" secondAttribute="trailing" constant="8" id="c1b-MO-pzf"/>
+                                                <constraint firstItem="hk7-Iw-W3P" firstAttribute="top" secondItem="lWY-FI-cMv" secondAttribute="top" constant="10" id="gMZ-dd-Zvm"/>
+                                                <constraint firstItem="3q2-6D-eNn" firstAttribute="top" secondItem="hk7-Iw-W3P" secondAttribute="bottom" constant="24" id="nBV-K8-vRO"/>
+                                                <constraint firstAttribute="trailing" secondItem="dxc-O5-AJk" secondAttribute="trailing" constant="8" id="wCm-nN-mor"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="hk7-Iw-W3P"/>
+                                                    <exclude reference="dxc-O5-AJk"/>
+                                                    <exclude reference="3q2-6D-eNn"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="6pk-kf-rTi"/>
+                                                    <exclude reference="Bpg-h1-28J"/>
+                                                    <exclude reference="O5y-KZ-Tn7"/>
+                                                    <exclude reference="c1b-MO-pzf"/>
+                                                    <exclude reference="nBV-K8-vRO"/>
+                                                    <exclude reference="Efd-85-CoR"/>
+                                                    <exclude reference="KVL-pi-Gdd"/>
+                                                    <exclude reference="wCm-nN-mor"/>
+                                                    <exclude reference="Lef-4f-1W3"/>
+                                                    <exclude reference="QRJ-Bc-XbN"/>
+                                                    <exclude reference="Vdd-2W-CqI"/>
+                                                    <exclude reference="gMZ-dd-Zvm"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="hk7-Iw-W3P"/>
+                                                    <include reference="dxc-O5-AJk"/>
+                                                    <include reference="3q2-6D-eNn"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="6pk-kf-rTi"/>
+                                                    <include reference="Bpg-h1-28J"/>
+                                                    <include reference="O5y-KZ-Tn7"/>
+                                                    <include reference="c1b-MO-pzf"/>
+                                                    <include reference="nBV-K8-vRO"/>
+                                                    <include reference="Efd-85-CoR"/>
+                                                    <include reference="KVL-pi-Gdd"/>
+                                                    <include reference="wCm-nN-mor"/>
+                                                    <include reference="Lef-4f-1W3"/>
+                                                    <include reference="QRJ-Bc-XbN"/>
+                                                    <include reference="Vdd-2W-CqI"/>
+                                                    <include reference="gMZ-dd-Zvm"/>
+                                                </mask>
+                                            </variation>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lWY-FI-cMv" firstAttribute="leading" secondItem="n8v-Dg-Vlr" secondAttribute="leading" constant="19" id="2HZ-ea-nJp"/>
+                                        <constraint firstItem="lWY-FI-cMv" firstAttribute="top" secondItem="n8v-Dg-Vlr" secondAttribute="top" constant="11" id="C9P-ut-aSs"/>
+                                        <constraint firstAttribute="trailing" secondItem="lWY-FI-cMv" secondAttribute="trailing" constant="19" id="Fhw-9S-Ljg"/>
+                                        <constraint firstAttribute="bottom" secondItem="lWY-FI-cMv" secondAttribute="bottom" constant="10" id="Mne-w8-03y"/>
+                                        <constraint firstAttribute="centerX" secondItem="lWY-FI-cMv" secondAttribute="centerX" id="Zf5-R0-zuF"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="lWY-FI-cMv"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="2HZ-ea-nJp"/>
+                                            <exclude reference="C9P-ut-aSs"/>
+                                            <exclude reference="Fhw-9S-Ljg"/>
+                                            <exclude reference="Mne-w8-03y"/>
+                                            <exclude reference="Zf5-R0-zuF"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="lWY-FI-cMv"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="2HZ-ea-nJp"/>
+                                            <include reference="C9P-ut-aSs"/>
+                                            <include reference="Fhw-9S-Ljg"/>
+                                            <include reference="Mne-w8-03y"/>
+                                            <include reference="Zf5-R0-zuF"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelMessage" destination="hk7-Iw-W3P" id="ci0-32-x8j"/>
+                                    <outlet property="labelName" destination="dxc-O5-AJk" id="r3d-d6-hfB"/>
+                                    <outlet property="labelTitle" destination="3q2-6D-eNn" id="eJK-Qc-3xh"/>
+                                    <outlet property="viewTestimonialBox" destination="lWY-FI-cMv" id="QHx-PA-ecs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="JNj-b8-yKb" id="4tj-gA-LKv"/>
+                            <outlet property="delegate" destination="JNj-b8-yKb" id="dkf-rh-h2N"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="kR6-8D-1Ua"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zaE-92-COA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1206" y="-486.75"/>
         </scene>
         <!--Shop-->
         <scene sceneID="3x6-h2-JUh">
@@ -2355,6 +2525,7 @@ Ribbon Key Jeans</string>
         <image name="button_minus_iPhone" width="53" height="54"/>
         <image name="button_terms_iPhone" width="333" height="32"/>
         <image name="divider_general_iPhone" width="320" height="2"/>
+        <image name="icon_more_iPhone" width="42" height="10"/>
         <image name="image_about_home_iPhone" width="380" height="253"/>
         <image name="image_featured_3_iPhone" width="95" height="93"/>
         <image name="login_logo_iPhone" width="208" height="201"/>
