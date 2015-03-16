@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeRootViewController.h"
+#import "CollectionRootTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -64,7 +66,6 @@
      forState:UIControlStateNormal];
     
     
-    self.tabBarController = (UITabBarController*)kStoryboard(@"mainTabView");
     
     return YES;
 }

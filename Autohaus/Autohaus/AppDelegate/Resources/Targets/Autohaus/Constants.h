@@ -79,6 +79,13 @@
 
 //--Configuration
 
+#define TABVIEW_SHOW_HOME                                   1
+#define TABVIEW_SHOW_SHOP                                   1
+#define TABVIEW_SHOW_CART                                   1
+#define TABVIEW_SHOW_TESTIMONIAL                            1
+#define TABVIEW_SHOW_MORE                                   1
+
+
 #define TESTIMONIAL_BOX_CORNER                              6.0f
 #define TESTIMONIAL_BOX_COLOR                               kSWATCH_Gray230
 #define TESTIMONIAL_MSG_FONT                                kFONT_HelveticaNeueMedium(16.0f)

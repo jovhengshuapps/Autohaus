@@ -30,6 +30,7 @@
 		443B1CE31AB6566A0090FFFA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B1CD91AB6566A0090FFFA /* UIProgressView+AFNetworking.m */; };
 		443B1CE41AB6566A0090FFFA /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B1CDB1AB6566A0090FFFA /* UIRefreshControl+AFNetworking.m */; };
 		443B1CE51AB6566A0090FFFA /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B1CDD1AB6566A0090FFFA /* UIWebView+AFNetworking.m */; };
+		443B1CE81AB6956A0090FFFA /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 443B1CE71AB6956A0090FFFA /* TabBarViewController.m */; };
 		443FA60A1AB0FD6C000EFD81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6091AB0FD6C000EFD81 /* main.m */; };
 		443FA6271AB0FD6C000EFD81 /* AutohausTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 443FA6261AB0FD6C000EFD81 /* AutohausTests.m */; };
 		44453B2F1AB0FF3D001A127E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44453B2E1AB0FF3D001A127E /* AppDelegate.m */; };
@@ -131,6 +132,8 @@
 		443B1CDB1AB6566A0090FFFA /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		443B1CDC1AB6566A0090FFFA /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		443B1CDD1AB6566A0090FFFA /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		443B1CE61AB6956A0090FFFA /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		443B1CE71AB6956A0090FFFA /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		443FA6041AB0FD6C000EFD81 /* Autohaus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autohaus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443FA6081AB0FD6C000EFD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443FA6091AB0FD6C000EFD81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -483,6 +486,8 @@
 		44453B651AB0FF66001A127E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				443B1CE61AB6956A0090FFFA /* TabBarViewController.h */,
+				443B1CE71AB6956A0090FFFA /* TabBarViewController.m */,
 				44EEC4A91AB10FEB00DA1CA9 /* Login */,
 				44453B771AB0FF66001A127E /* Home */,
 				44453B661AB0FF66001A127E /* About Us */,
@@ -763,6 +768,7 @@
 				44453B991AB0FF66001A127E /* CollectionListTableViewController.m in Sources */,
 				44453B841AB0FF66001A127E /* CollectionHeaderLabel.m in Sources */,
 				443B1CC61AB655AF0090FFFA /* AFNetworkReachabilityManager.m in Sources */,
+				443B1CE81AB6956A0090FFFA /* TabBarViewController.m in Sources */,
 				443B1CCA1AB655AF0090FFFA /* AFURLResponseSerialization.m in Sources */,
 				44453B811AB0FF66001A127E /* GalleryCell.m in Sources */,
 				33BA16F71AB3C93A00DDD5CA /* AutohausShopViewController.m in Sources */,
