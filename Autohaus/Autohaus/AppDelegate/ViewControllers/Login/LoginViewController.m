@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblNotMember;
 @property (weak, nonatomic) IBOutlet UIView *viewCreateAccount;
 @property (weak, nonatomic) IBOutlet UIButton *btnCreateAccount;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewLogo;
 - (IBAction)forgotPasswordPresed:(id)sender;
 - (IBAction)loginPressed:(id)sender;
 
@@ -39,17 +40,21 @@
     self.textFieldEmail.textColor = kSWATCH_Gray102;
     self.textFieldPassword.textColor = kSWATCH_Gray102;
         
-    self.btnLogin.layer.cornerRadius = 2.0f;
-    self.btnLogin.backgroundColor = kSWATCH_BlueButton;
-    [self.btnLogin setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.btnLogin.layer.cornerRadius = LOGIN_BUTTON_CORNER;
+    self.btnLogin.backgroundColor = LOGIN_BUTTON_COLOR;
+    self.btnLogin.titleLabel.font = LOGIN_BUTTON_FONT;
+    [self.btnLogin setTitleColor:LOGIN_BUTTON_TEXTCOLOR forState:UIControlStateNormal];
     
     
     self.lblNotMember.font = kFONT_HelveticaNeueLight(16.0f);
     self.lblNotMember.textColor = kSWATCH_Gray80;
     
-    self.btnCreateAccount.layer.cornerRadius = 2.0f;
-    self.btnCreateAccount.backgroundColor = kSWATCH_BlueButton;
-    [self.btnCreateAccount setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.btnCreateAccount.layer.cornerRadius = LOGIN_BUTTON_CORNER;
+    self.btnCreateAccount.backgroundColor = LOGIN_BUTTON_COLOR;
+    self.btnCreateAccount.titleLabel.font = LOGIN_BUTTON_FONT;
+    [self.btnCreateAccount setTitleColor:LOGIN_BUTTON_TEXTCOLOR forState:UIControlStateNormal];
+    
+    self.imageViewLogo.image = LOGIN_MAIN_LOGO;
 }
 
 - (void)didReceiveMemoryWarning {
