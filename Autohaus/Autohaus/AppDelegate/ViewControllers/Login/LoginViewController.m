@@ -7,7 +7,6 @@
 //
 
 #import "LoginViewController.h"
-#import "Constants.h"
 
 @interface LoginViewController ()
 - (IBAction)skipLogin:(id)sender;
@@ -19,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIView *viewCreateAccount;
 @property (weak, nonatomic) IBOutlet UIButton *btnCreateAccount;
 - (IBAction)forgotPasswordPresed:(id)sender;
+- (IBAction)loginPressed:(id)sender;
 
 @end
 
@@ -82,6 +82,33 @@
 
 - (IBAction)forgotPasswordPresed:(id)sender {
 }
+
+- (IBAction)loginPressed:(id)sender {
+    
+    WebserviceCall *call = [[WebserviceCall alloc] init];
+    
+    [call initCallWithServiceURL:@"http://autohaus.com.sg/services/?type=login" withParameters:@{@"user_login":self.textFieldEmail.text,@"user_pass":self.textFieldPassword.text} withCompletionHandler:^(id responseObject) {
+        NSError *error = nil;
+        NSDictionary *jsonResponse = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:&error];
+        
+        WebserviceCallResponse response = (WebserviceCallResponse)[[[jsonResponse objectForKey:@"response"] objectForKey:@"status"] integerValue];
+        
+        if (response == WebserviceCallResponseNotFound) {
+            NSLog(@"notfound");
+        }
+        else if (response == WebserviceCallResponseWrongCredentials) {
+            NSLog(@"wrong login");
+        }
+        else if (response == WebserviceCallResponseSuccessful) {
+            NSLog(@"success");
+        }
+        
+        NSLog(@"[%li]error:%@\n\nresponse:%@",response,error,jsonResponse);
+        
+    }];
+    
+}
+
 
 #pragma mark - UITextField Delegate Method
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

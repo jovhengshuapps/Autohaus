@@ -270,6 +270,9 @@
                                         <include reference="lPa-yR-E3h"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="loginPressed:" destination="lVs-cW-36x" eventType="touchUpInside" id="HWO-O4-VrE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkv-re-cIG">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
